@@ -1,0 +1,4 @@
+Git: it is a version control system.
+    : use to update the version, track the code and share the code with team.
+Types of version control system :1. centralized (svm) 
+        2.Distributed (Git)
