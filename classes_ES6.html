@@ -1,0 +1,65 @@
+<!---these are methods.we can have multiple of methods in claSS.>>// -->
+    <!-- There are 3 types of method  
+    1.Constructor
+    2.Protype
+    3.Static-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // class declaraton//
+        // class hello{
+        //     msg(){
+        //         console.log("HI EVERYone");
+        //     }
+        //     geo(){    
+        //         console.log("Welcome to GeoSpoc")
+        //     }
+
+        // }
+        // let a=new hello();
+        // a.msg();
+        // a.geo();
+
+
+        // BY USing Constructor Method
+        class student{
+            constructor(name,age){ //passing name as argument
+                //propereties name define here .basically it is varibale
+                this.studentname=name;
+                this.studentage=age; //both name are different
+             console.log("Iam Groot")
+            }
+            // prototyoe method
+            geoo(){
+                // console.log("Hi " + this.studentname + " "  +  "Your age "+ this.studentage)
+                console.log(`Hi   ${this.studentname}  Your age  ${this.studentage}`)
+            }
+            //static method
+            static staticMethod(){
+                console.log("hello im static method")
+            }
+        }
+        let a=new student("Akashay",22);
+        let b=new student("mayur",28);  //a is differnent object
+          //a is differnent object
+        // let b=new Student();   //automatically consturctor function get call ..<<this is different object
+
+        //to acces name we can outside the class and assign them
+        // a.name="Akshay";//this line is not require we can write Akshay in student also
+         a.geoo();
+         b.geoo();
+        // a.staticMethod(); //it will u error
+        student.staticMethod(); 
+    
+
+
+    </script>
+</body>
+</html>
